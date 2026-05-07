@@ -1,4 +1,4 @@
-# 🌸 BloomJobs — Job Board App
+# 🌸 BloomJobs — Job Board App🌸 
 
 A full-stack job board application built with **React** and **Supabase**.
 
