@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter, Routes, Route, Navigate, Link } from 'react-router-dom'
+import JobList from './pages/JobList'
+import JobDetail from './pages/JobDetail'
+import NewJob from './pages/NewJob'
+import ApplyJob from './pages/ApplyJob'
+import './index.css'
 
-function App() {
+function Navbar() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <nav>
+      <Link to="/jobs" className="nav-brand">
+        bloom<span>jobs</span>
+      </Link>
+      <Link to="/jobs/new" className="nav-link">+ Post a Job</Link>
+    </nav>
+  )
 }
 
-export default App;
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Navigate to="/jobs" replace />} />
+        <Route path="/jobs" element={<JobList />} />
+        <Route path="/jobs/new" element={<NewJob />} />
+        <Route path="/jobs/:id/apply" element={<ApplyJob />} />
+        <Route path="/jobs/:id" element={<JobDetail />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
