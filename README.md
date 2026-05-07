@@ -18,7 +18,10 @@ A full-stack job board application built with **React** and **Supabase**.
 
 ## 📸 Screenshots
 
-<!-- SS buraya gelecek -->
+<img width="1919" height="920" alt="image" src="https://github.com/user-attachments/assets/cc9e52b6-3029-4480-9f16-4ed03e665967" />
+<img width="1737" height="843" alt="image" src="https://github.com/user-attachments/assets/315c7d30-8737-41aa-9456-0c2b0ddccc0e" />
+<img width="1918" height="935" alt="image" src="https://github.com/user-attachments/assets/d662397b-16a4-431f-9067-1a5ea5894541" />
+
 
 ## ⚙️ Setup
 
